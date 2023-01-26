@@ -35,12 +35,29 @@
 
 //You can use the map() method to create a new array of objects, where each object is created by performing arithmetic on the corresponding object in the original array.
 
-let originalArray = [
-  { x: 2, y: 3 },
-  { x: 4, y: 5 },
-  { x: 6, y: 7 },
-];
-let newArray = originalArray.map(function (obj) {
-  return { x: obj.x * 2, y: obj.y + 1 };
-});
-console.log(newArray); // [{x: 4, y: 4}, {x: 8, y: 6}, {x: 12, y: 8}]
+// let originalArray = [
+//   { x: 2, y: 3 },
+//   { x: 4, y: 5 },
+//   { x: 6, y: 7 },
+// ];
+// let newArray = originalArray.map(function (obj) {
+//   return { x: obj.x * 2, y: obj.y + 1 };
+// });
+// console.log(newArray); // [{x: 4, y: 4}, {x: 8, y: 6}, {x: 12, y: 8}]
+
+// You can use arrow function with map method
+
+// let originalArray = [{x: 2, y: 3}, {x: 4, y: 5}, {x: 6, y: 7}];
+// let newArray = originalArray.map(obj =>({x: obj.x * 2, y: obj.y + 1}));
+// console.log(newArray); // [{x: 4, y: 4}, {x: 8, y: 6}, {x: 12, y: 8}]
+
+// You can also use forEach to iterate over the array and create new array of objects
+
+// let originalArray = [
+//   { x: 2, y: 3 },
+//   { x: 4, y: 5 },
+//   { x: 6, y: 7 },
+// ];
+// let newArray = [];
+// originalArray.forEach((obj) => newArray.push({ x: obj.x * 2, y: obj.y + 1 }));
+// console.log(newArray); // [{x: 4, y: 4}, {x: 8, y: 6}, {x: 12, y: 8}]
