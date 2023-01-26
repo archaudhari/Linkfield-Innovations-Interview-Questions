@@ -1,6 +1,3 @@
-// Import stylesheets
-import './style.css';
-
-// Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+let numbers = [4, 2, 5, 1, 3];
+numbers.sort();
+console.log(numbers); // [1, 2, 3, 4, 5]
