@@ -32,7 +32,12 @@
 // console.log(fruits); //['apple', 'banana', 'cherry']
 
 //2.Create new array of objects after performing arithmetic on a given array of Objects
-let numbers = [3, 25, 100];
-let doubles = numbers.map(function (num) {
-  return num * 2;
+let originalArray = [
+  { x: 2, y: 3 },
+  { x: 4, y: 5 },
+  { x: 6, y: 7 },
+];
+let newArray = originalArray.map(function (obj) {
+  return { x: obj.x * 2, y: obj.y + 1 };
 });
+console.log(newArray); // [{x: 4, y: 4}, {x: 8, y: 6}, {x: 12, y: 8}]
