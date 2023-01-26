@@ -32,6 +32,9 @@
 // console.log(fruits); //['apple', 'banana', 'cherry']
 
 //2.Create new array of objects after performing arithmetic on a given array of Objects
+
+//You can use the map() method to create a new array of objects, where each object is created by performing arithmetic on the corresponding object in the original array.
+
 let originalArray = [
   { x: 2, y: 3 },
   { x: 4, y: 5 },
