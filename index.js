@@ -32,3 +32,7 @@
 // console.log(fruits); //['apple', 'banana', 'cherry']
 
 //2.Create new array of objects after performing arithmetic on a given array of Objects
+let numbers = [3, 25, 100];
+let doubles = numbers.map(function (num) {
+  return num * 2;
+});
