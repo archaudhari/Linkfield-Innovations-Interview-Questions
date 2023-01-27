@@ -68,7 +68,34 @@
 
 // Here is an example implementation in JavaScript:
 
+// function removeDuplicates(arr) {
+//   return arr.filter((item, index) => arr.indexOf(item) === index);
+// }
+
+// To remove duplicates from an array without using the filter function, you can use a combination of a for loop and an object to keep track of unique values. Here is an example in JavaScript:
+
 function removeDuplicates(arr) {
-  return arr.filter((item, index) => arr.indexOf(item) === index);
+  var unique = {};
+  var newArr = [];
+  for (var i = 0; i < arr.length; i++) {
+    if (!unique[arr[i]]) {
+      newArr.push(arr[i]);
+      unique[arr[i]] = true;
+    }
+  }
+  return newArr;
 }
 
+// Remove duplicates from an array without using filter
+
+function removeDuplicates(arr) {
+  var unique = {};
+  var newArr = [];
+  for (var i = 0; i < arr.length; i++) {
+    if (!unique[arr[i]]) {
+      newArr.push(arr[i]);
+      unique[arr[i]] = true;
+    }
+  }
+  return newArr;
+}
