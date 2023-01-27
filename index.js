@@ -61,3 +61,14 @@
 // let newArray = [];
 // originalArray.forEach((obj) => newArray.push({ x: obj.x * 2, y: obj.y + 1 }));
 // console.log(newArray); // [{x: 4, y: 4}, {x: 8, y: 6}, {x: 12, y: 8}]
+
+// Remove Duplicates from an array without using set in JS
+
+// In JavaScript, one way to remove duplicates from an array without using a set is to use the filter() method along with the indexOf() method. The filter() method creates a new array with all elements that pass the test implemented by the provided function. The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present. By using these methods together, you can filter out duplicates from the original array.
+
+// Here is an example implementation in JavaScript:
+
+function removeDuplicates(arr) {
+  return arr.filter((item, index) => arr.indexOf(item) === index);
+}
+
